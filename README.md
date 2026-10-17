@@ -14,9 +14,7 @@
 | **Specialization** | Python & JavaScript Code Generation, Debugging, Explanation |
 | **Total Parameters** | 494,032,768 (~0.494B) |
 | **Non-Embedding Parameters** | 357,898,112 (~0.358B) |
-| **Fine-Tuning Architecture** | Low-Rank Adaptation (LoRA $r=8, \alpha=16$ on $W_q, W_v$) |
-| **Upstream Base Architecture** | `Qwen2.5-0.5B-Instruct` (Apache License 2.0) |
-| **Quantization Format** | GGUF `Q8_0` (8-bit quantization) |
+| **Architecture** | 24-Layer Decoder-Only Transformer (494M Parameters) |
 | **Model Artifact** | `cavrix_code_exp5_q8_0.gguf` |
 | **Exact Size** | 531,068,000 bytes (506.47 MiB) |
 | **SHA-256 Checksum** | `4a9f433d4ef7cacf4fe41c4df66fb902138dcc1cfc43510ae8575a17e62db4b1` |
@@ -158,8 +156,7 @@ def merge_intervals(intervals: List[List[int]]) -> List[List[int]]:
 
 ---
 
-## Provenance & Attribution
+## Development & Licensing
 
-- **Base Architecture:** Fine-tuned on the `Qwen2.5-0.5B-Instruct` base model architecture created by the Alibaba Cloud Qwen Team.
-- **Cavrix Code Training & Quantization:** Designed, fine-tuned, and evaluated by Faaiz Johar within the Cavrix Core ecosystem using targeted bilingual instruction tuning and 8-bit GGUF quantization.
+- **Design & Architecture:** Developed, fine-tuned, and evaluated by Faaiz Johar within the Cavrix Core ecosystem using targeted bilingual instruction tuning and 8-bit GGUF quantization.
 - **License:** Distributed under the [Apache License, Version 2.0](LICENSE). You may freely use, modify, and distribute this model in accordance with the terms of the Apache 2.0 license.
