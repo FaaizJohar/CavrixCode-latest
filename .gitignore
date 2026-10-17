@@ -1,0 +1,23 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python / Environment caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+env/
+venv/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Temporary and log files
+*.log
+*.tmp
+tmp/
