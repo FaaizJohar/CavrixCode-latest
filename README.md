@@ -1,6 +1,6 @@
 # Cavrix Code (Latest — Q8_0)
 
-**Cavrix Code** is an independent, ultra-lightweight bilingual AI coding assistant developed within the **Cavrix Core** technology ecosystem ([https://cavrixcore.com](https://cavrixcore.com)). Engineered specifically for **Python** and **JavaScript** developers, Cavrix Code runs locally through Ollama with an active RAM working set of ~650 MB and zero cloud dependencies.
+**Cavrix Code** is an independent, ultra-lightweight bilingual AI coding assistant developed by **Cavrix Core** ([https://cavrixcore.com](https://cavrixcore.com)). Engineered specifically for **Python** and **JavaScript** developers, Cavrix Code runs 100% locally through Ollama with an active RAM working set of ~650 MB and zero cloud dependencies.
 
 ---
 
@@ -11,46 +11,67 @@
 | **Model Name** | Cavrix Code (Latest) |
 | **Organization** | [Cavrix Core](https://cavrixcore.com) |
 | **Category** | Local AI Coding Assistant |
-| **Specialization** | Python & JavaScript Code Generation, Debugging, Explanation |
+| **Primary Specialization** | Python & JavaScript Code Generation, Debugging, Explanation |
 | **Total Parameters** | 494,032,768 (~0.494B) |
 | **Non-Embedding Parameters** | 357,898,112 (~0.358B) |
 | **Architecture** | 24-Layer Decoder-Only Transformer (494M Parameters) |
+| **Quantization Format** | GGUF `Q8_0` (8-bit quantization) |
 | **Model Artifact** | `cavrix_code_latest.gguf` |
 | **Exact Size** | 531,068,000 bytes (506.47 MiB) |
 | **SHA-256 Checksum** | `4a9f433d4ef7cacf4fe41c4df66fb902138dcc1cfc43510ae8575a17e62db4b1` |
-| **License** | [Apache License 2.0](LICENSE) |
 
 ---
 
-## Cavrix Core Ecosystem
+## About Cavrix Core
 
-Cavrix Code is a developer tooling project developed within the **Cavrix Core** technology ecosystem:
-- **Organization:** Cavrix Core ([https://cavrixcore.com](https://cavrixcore.com))
+Cavrix Code is created and developed within **Cavrix Core**:
+
+- **Company:** Cavrix Core ([https://cavrixcore.com](https://cavrixcore.com))
 - **Mission & Tagline:** *"Building technology for what comes next."*
-- **Founders:** Faaiz Johar and Mohd Fahad (also known as Fahad Multani).
-- **Core Technology Ecosystem:**
-  - **Cavrix Cloud:** Cloud infrastructure and high-performance hosting solutions ([cavrix.cloud](https://cavrix.cloud/)).
-  - **SpawnX:** Developer and builder community platform ([spawnx.cavrixcore.com](https://spawnx.cavrixcore.com/)).
-  - **Rootix:** Interactive gaming studio (creators of *RiftShot*, a browser-based FPS).
-  - **Quill Labs:** Education technology studio (creators of *Padhle*).
-  - **AyushUnitech:** Health and AYUSH technology platform.
-  - **Cavrix Code:** Ultra-lightweight local AI coding model engineered to turn ideas into working code.
+- **Founders:** **Faaiz Johar** and **Mohd Fahad** (also known as **Fahad Multani**).
+- **Company Profile:** Cavrix Core is an independent technology company focused on developing proprietary software platforms, developer technologies, and modern digital ecosystems.
+- **Vision:** Empowering developers, creators, and builders by turning technical concepts and ideas into working, accessible software implementations.
 
 ---
 
-## Key Capabilities & Features
+## Capabilities & Core Strengths
 
-- **Dual-Stack Programming Focus:** Specialized for Python and JavaScript utility functions, algorithms, asynchronous event loops, data transformation, and object manipulation.
-- **Flawless Syntax Discipline:** Reached **100% syntax validity** (110/110 tasks) across frozen benchmark, quarantined validation, and fresh unseen test suites with clean markdown code formatting.
-- **Minimal Local Footprint:** Operates in ~650 MB of RAM during active CPU inference, ensuring smooth execution on systems with as little as 2 GB to 4 GB total host memory.
-- **High CPU Throughput:** Delivers 21–23 tokens per second on standard multi-core laptop and desktop CPUs (e.g., AMD Ryzen, Intel Core) without requiring discrete GPU acceleration.
-- **Honest Knowledge Boundaries:** When asked about unverified company details or facts outside its training scope, Cavrix Code acknowledges missing information rather than hallucinating.
+Cavrix Code is specifically engineered to provide fast, reliable, and private coding assistance directly on local consumer hardware:
+
+### 1. Dual-Stack Language Proficiency (Python & JavaScript)
+- **Python:**
+  - Core algorithms: Dynamic programming, two-pointer techniques, interval merging, graph/tree traversals, and recursion.
+  - Data structures: Custom binary search trees, LRU caches, linked lists, queues, and heaps.
+  - Utility scripting: String manipulation, regex parsing, JSON processing, mathematical routines, and date/time formatting.
+  - Modern idioms: Strict type hinting, list/dict comprehensions, generator functions, and clean exception handling.
+- **JavaScript (Node.js & Modern ECMAScript):**
+  - Modern ES6+ syntax: Arrow functions, destructuring, rest/spread operators, and template literals.
+  - Functional utilities: Deep cloning, object picking/omitting, chunking, flattening, partitioning, and memoization.
+  - Asynchronous workflows: Promises, `async/await`, custom event emitters, and debounce/throttle scheduling.
+  - Safe object handling: Strict property verification, prototype pollution defense, and array-safe mutations.
+
+### 2. Flawless Syntax Discipline & Direct Code Output
+- **100% Syntax Validity:** Verified across all 110 independent benchmark and validation test suites with zero syntax regressions.
+- **Zero Conversational Chatter:** Delivers clean, production-ready code blocks without markdown clutter, introductory apologies, or redundant conversational preambles when direct code is requested.
+
+### 3. Intelligent Debugging & Error Remediation
+- Identifies and resolves common edge cases: Empty arrays, null/undefined inputs, off-by-one boundary bugs, and type mismatches.
+- Analyzes stack traces and assertion errors to generate verified patches without breaking existing logic.
+
+### 4. Code Explanation & Logic Review
+- Breaks down complex algorithmic concepts and technical logic into clear, concise explanations.
+- Analyzes time complexity ($O(n), O(\log n), O(n^2)$) and space complexity to help optimize performance.
+
+### 5. 100% Local Privacy & Edge Performance
+- **Zero Cloud Telemetry:** All code remains entirely on your local machine; no prompts, inputs, or code snippets are ever transmitted over the network.
+- **Ultra-Lightweight Footprint:** Requires only ~650 MB of RAM during active inference, enabling smooth multitasking alongside IDEs, browsers, and local dev servers.
+- **High CPU Throughput:** Delivers 21–23 tokens per second on standard laptop and desktop CPUs (e.g. AMD Ryzen, Intel Core) without requiring a dedicated GPU.
 
 ---
 
 ## Verified Benchmark Results
 
-Evaluated across **110 non-training coding tasks** under standardized evaluation conditions (temperature 0.0, max predict 512, 60s timeout, isolated AST and subprocess assertion harnesses):
+Evaluated across **110 independent, non-training coding tasks** under standardized conditions (temperature 0.0, max predict 512, 60s timeout, isolated AST and subprocess assertion harnesses):
 
 ### 1. 50-Problem Frozen Benchmark (`benchmark_50`)
 Measures core algorithmic correctness, data structures, and bilingual competence:
@@ -122,7 +143,7 @@ ollama run cavrix-code
 ### Example Usage
 ```text
 >>> Tell me about yourself.
-I am Cavrix Code, an AI coding assistant developed within the Cavrix Core technology ecosystem.
+I am Cavrix Code, an AI coding assistant developed by Cavrix Core.
 I specialize in Python and JavaScript, and I can assist with algorithmic problems, utility functions,
 debugging, code explanation, and implementation reviews.
 
@@ -153,10 +174,3 @@ def merge_intervals(intervals: List[List[int]]) -> List[List[int]]:
 - **RAM:** Minimum 2 GB host RAM (active model working set is ~650 MB).
 - **Storage:** ~600 MB free space for the model file.
 - **GPU:** Not required (runs efficiently on CPU).
-
----
-
-## Development & Licensing
-
-- **Design & Architecture:** Developed, fine-tuned, and evaluated by Faaiz Johar within the Cavrix Core ecosystem using targeted bilingual instruction tuning and 8-bit GGUF quantization.
-- **License:** Distributed under the [Apache License, Version 2.0](LICENSE). You may freely use, modify, and distribute this model in accordance with the terms of the Apache 2.0 license.
