@@ -1,4 +1,4 @@
-FROM ./cavrix_code_exp5_q8_0.gguf
+FROM ./cavrix_code_latest.gguf
 
 TEMPLATE """{{ if .System }}<|im_start|>system
 {{ .System }}<|im_end|>

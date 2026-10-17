@@ -1,4 +1,4 @@
-# Cavrix Code (Experiment 5 — Q8_0)
+# Cavrix Code (Latest — Q8_0)
 
 **Cavrix Code** is an independent, ultra-lightweight bilingual AI coding assistant developed within the **Cavrix Core** technology ecosystem ([https://cavrixcore.com](https://cavrixcore.com)). Engineered specifically for **Python** and **JavaScript** developers, Cavrix Code runs locally through Ollama with an active RAM working set of ~650 MB and zero cloud dependencies.
 
@@ -8,14 +8,14 @@
 
 | Property | Value |
 | :--- | :--- |
-| **Model Name** | Cavrix Code (Experiment 5) |
+| **Model Name** | Cavrix Code (Latest) |
 | **Organization** | [Cavrix Core](https://cavrixcore.com) |
 | **Category** | Local AI Coding Assistant |
 | **Specialization** | Python & JavaScript Code Generation, Debugging, Explanation |
 | **Total Parameters** | 494,032,768 (~0.494B) |
 | **Non-Embedding Parameters** | 357,898,112 (~0.358B) |
 | **Architecture** | 24-Layer Decoder-Only Transformer (494M Parameters) |
-| **Model Artifact** | `cavrix_code_exp5_q8_0.gguf` |
+| **Model Artifact** | `cavrix_code_latest.gguf` |
 | **Exact Size** | 531,068,000 bytes (506.47 MiB) |
 | **SHA-256 Checksum** | `4a9f433d4ef7cacf4fe41c4df66fb902138dcc1cfc43510ae8575a17e62db4b1` |
 | **License** | [Apache License 2.0](LICENSE) |
@@ -54,23 +54,23 @@ Evaluated across **110 non-training coding tasks** under standardized evaluation
 
 ### 1. 50-Problem Frozen Benchmark (`benchmark_50`)
 Measures core algorithmic correctness, data structures, and bilingual competence:
-- **Cavrix Code Exp 5 (Latest):** **26 / 50 (52.0% Pass@1)**
+- **Cavrix Code (Latest):** **26 / 50 (52.0% Pass@1)**
   - Python: 20 / 40 (50.0%)
   - JavaScript: 6 / 10 (60.0%)
-- **Cavrix Code Exp 4:** 24 / 50 (48.0% Pass@1)
+- **Cavrix Code (Previous Release):** 24 / 50 (48.0% Pass@1)
 - **Base Architecture Baseline:** 19 / 50 (38.0% Pass@1)
 
 ### 2. 40-Problem Quarantined Validation Set
 Held-out unseen coding problems measuring functional generalization:
-- **Cavrix Code Exp 5 (Latest):** **25 / 40 (62.5% Pass@1)**
+- **Cavrix Code (Latest):** **25 / 40 (62.5% Pass@1)**
   - Python: 15 / 24 (62.5%)
   - JavaScript: 10 / 16 (62.5%)
-- **Cavrix Code Exp 4:** 22 / 40 (55.0% Pass@1)
+- **Cavrix Code (Previous Release):** 22 / 40 (55.0% Pass@1)
 - **Base Architecture Baseline:** 25 / 40 (62.5% Pass@1)
 
 ### 3. 20-Problem Fresh Unseen Evaluation Suite
 Non-overlapping tasks testing prompt stability and zero-shot reasoning:
-- **Cavrix Code Exp 5 (Latest):** **14 / 20 (70.0% Pass@1)**
+- **Cavrix Code (Latest):** **14 / 20 (70.0% Pass@1)**
   - Python: 10 / 12 (83.3%)
   - JavaScript: 4 / 8 (50.0%)
 - **Base Architecture Baseline:** 10 / 20 (50.0% Pass@1)
@@ -79,8 +79,8 @@ Non-overlapping tasks testing prompt stability and zero-shot reasoning:
 | Model Configuration | Overall Pass@1 | Python Pass@1 | JavaScript Pass@1 | Syntax Validity | Avg Latency | Throughput |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Base Architecture Baseline** | 54 / 110 (49.1%) | 38 / 76 (50.0%) | 16 / 34 (47.1%) | 97.3% | ~10.5s | 16–20 tok/s |
-| **Cavrix Code Exp 4** | 61 / 110 (55.5%) | 42 / 76 (55.3%) | 19 / 34 (55.9%) | 100.0% | ~4.9s | 15–22 tok/s |
-| **Cavrix Code Exp 5 (Latest)** | **65 / 110 (59.1%)** | **45 / 76 (59.2%)** | **20 / 34 (58.8%)** | **100.0%** | **~3.6s** | **21–23 tok/s** |
+| **Cavrix Code (Previous Release)** | 61 / 110 (55.5%) | 42 / 76 (55.3%) | 19 / 34 (55.9%) | 100.0% | ~4.9s | 15–22 tok/s |
+| **Cavrix Code (Latest)** | **65 / 110 (59.1%)** | **45 / 76 (59.2%)** | **20 / 34 (58.8%)** | **100.0%** | **~3.6s** | **21–23 tok/s** |
 
 ---
 
@@ -101,10 +101,10 @@ git lfs pull
 ### Step 2: Verify Model Checksum
 ```bash
 # On Linux / macOS:
-sha256sum cavrix_code_exp5_q8_0.gguf
+sha256sum cavrix_code_latest.gguf
 
 # On Windows (PowerShell):
-Get-FileHash -Algorithm SHA256 .\cavrix_code_exp5_q8_0.gguf
+Get-FileHash -Algorithm SHA256 .\cavrix_code_latest.gguf
 ```
 Expected output:
 `4a9f433d4ef7cacf4fe41c4df66fb902138dcc1cfc43510ae8575a17e62db4b1`
